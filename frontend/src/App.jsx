@@ -2,8 +2,11 @@ import './index.css';
 import React, { useEffect } from 'react';
 import DarkModeToggle from './DarkModeToggle.jsx';
 
+const url = "https://note-backend-9215.onrender.com/"
+// const url = "http://localhost:3000"
+
 const deletbttn = (todoId) => {
-  fetch(`http://localhost:3000/todos/${todoId}`, {
+  fetch(url + `/todos/${todoId}`, {
     method: "DELETE",
   })
     .then((response) => {
@@ -24,7 +27,7 @@ const onpress = async () => {
   const title = document.getElementById('title').value;
   const description = document.getElementById('description').value;
 
-  const response = await fetch('http://localhost:3000/todos', {
+  const response = await fetch(url + '/todos', {
     method: "POST",
     body: JSON.stringify({
       title: title,
@@ -48,7 +51,7 @@ function useTodos(){
   const [todos,setTodos]= React.useState([])
 
   React.useEffect(()=> {
-    fetch("http://localhost:3000/todos",{
+    fetch(url +"/todos",{
       method:"GET"
     }).then((response)=>{
       response.json().then((data) =>{
@@ -57,7 +60,7 @@ function useTodos(){
       })})
 
       setInterval(()=>{
-        fetch("http://localhost:3000/todos",{
+        fetch(url +"/todos",{
           method:"GET"
         }).then((response)=>{
           response.json().then((data) =>{
