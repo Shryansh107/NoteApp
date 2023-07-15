@@ -107,7 +107,7 @@ function App() {
       })}
           </div>
 
-          <div className=' flex flex-nowrap flex-row justify-evenly items-center bg-[#f3f2f2] dark:bg-[#2a2a2a] text-[#000] dark:text-[#ffffff]  p-2  border-solid border-2 border-[#ccc] dark:border-[#4746467c] rounded-xl h-fit w-fit'>
+          <div className=' flex flex-nowrap flex-row justify-evenly items-center bg-[#f3f2f2] dark:bg-[#2a2a2a] text-[#000] dark:text-[#ffffff]  p-1  border-solid border-2 border-[#ccc] dark:border-[#4746467c] rounded-xl h-fit w-fit'>
 
 <div className='flex flex-wrap gap-1'>
   <input id="title" className=" bg-[#fff] dark:bg-[#2a2a2a] text-[#000] dark:text-[#FFFFFF] border-solid border-2 border-[#ccc] dark:border-[#4746467c] p-2 rounded-xl mr-1 w-full" type="text" placeholder='Heading'/>
