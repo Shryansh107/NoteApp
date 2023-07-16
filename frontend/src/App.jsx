@@ -2,7 +2,7 @@ import './index.css';
 import React, { useEffect } from 'react';
 import DarkModeToggle from './DarkModeToggle.jsx';
 
-const url = "https://note-backend-9215.onrender.com/"
+const url = "https://note-backend-9215.onrender.com"
 // const url = "http://localhost:3000"
 
 const deletbttn = (todoId) => {
